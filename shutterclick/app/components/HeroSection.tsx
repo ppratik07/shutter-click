@@ -43,8 +43,8 @@ export default function Hero() {
                         Portrait & Event Photographer
                     </h1>
                     <div className="fixed bottom-12 left-6">
-                        <Button className="px-6 py-6 rounded-xl hover:opacity-90 transition">
-                            <div className="text-xs uppercase tracking-widest">
+                        <Button className="px-6 py-6 rounded-xl hover:opacity-90 transition bg-[#a7857d]">
+                            <div className="text-xs uppercase tracking-widest ">
                                 Book a Session
                             </div>
                         </Button>
