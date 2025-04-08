@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="relative z-10 p-6 flex flex-col h-full justify-between">
                 {/* Header */}
                 <div className="flex justify-between items-start">
-                    <div className="text-xs uppercase tracking-widest text-white">LOGO</div>
+                    <div className="text-xs uppercase tracking-widest text-white">shutter clicks</div>
                     <div className="mt-[10px] text-xs uppercase tracking-widest text-right leading-tight">
                         <span className="block text-white">Payment Plans</span>
                         <span className="block text-white">Available</span>
