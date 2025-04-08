@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
 const images: string[] = [
-    'https://media.istockphoto.com/id/1190367451/photo/law-student-standing-at-entrance-to-university-building.jpg?s=1024x1024&w=is&k=20&c=-PbWOUx8ioEJepOjOjUFtK9nV61fEiEOxSPFCfwtxxM=',
-    'https://media.istockphoto.com/id/480849669/photo/small-girl-playing-with-colors.jpg?s=1024x1024&w=is&k=20&c=K1ys-TJxUUwBHnjn6bDZGaxI0-jOt3RS1c1kyensEYQ=',
+    'https://images.unsplash.com/photo-1647283312789-573c253bee1a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1617066783456-65a5eeb48950?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'https://plus.unsplash.com/premium_photo-1664298807846-b7989767c04e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://media.istockphoto.com/id/667764368/photo/were-tying-the-knot.jpg?s=1024x1024&w=is&k=20&c=e0NwRhGIqmTZuI6tUJtOewjp6BZ3lI6_Y11GkHvUGPI=',
-    'https://media.istockphoto.com/id/2127644067/photo/family-and-friends-showering-floral-blessings-on-bride-and-groom-during-haldi-ceremony.jpg?s=1024x1024&w=is&k=20&c=FBP8hHjytrLHt-KUGpv68J4n2XWVTIOstfN99fxRghk='
+    'https://images.unsplash.com/photo-1544570768-c01eb520ee37?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1460978812857-470ed1c77af0?q=80&w=3095&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 ];
 
 export default function Hero() {
