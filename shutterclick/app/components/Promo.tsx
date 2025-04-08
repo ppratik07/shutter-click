@@ -1,0 +1,19 @@
+import React from "react";
+
+export default function Promo() {
+  return (
+    <section className="relative w-full h-[80vh] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('https://plus.unsplash.com/premium_photo-1690031000842-1ac0508f18b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
+      <div className="bg-white/90 max-w-3xl w-full mx-4 md:mx-auto p-10 md:p-16 shadow-lg rounded-md">
+        <h2 className="text-sm md:text-md font-light uppercase tracking-widest text-gray-600 mb-6">
+          Luxurious Picnic & Mini Photo Session for Two
+        </h2>
+        <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-8">
+          Book a beautiful luxurious 2hr picnic for TWO with Hermosa Picnics and capture the moment in time with a complimentary add-on mini photo session with Shalamar Jones Photography.
+        </p>
+        <button className="bg-[#a7857d] text-white uppercase tracking-wider px-6 py-2 text-xs rounded-full shadow hover:bg-[#957469] transition">
+          Learn More
+        </button>
+      </div>
+    </section>
+  );
+}
