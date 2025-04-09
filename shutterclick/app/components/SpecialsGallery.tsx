@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const sessions = [
@@ -56,7 +57,7 @@ export default function SpecialsGallery() {
         >
           {/* Image */}
           <div className="w-full md:w-1/2">
-            <img
+            <Image
               src={session.image}
               alt={session.title}
               width={600}

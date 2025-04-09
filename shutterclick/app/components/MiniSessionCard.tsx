@@ -1,4 +1,5 @@
 import { Clock, DollarSign, CalendarDays } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 interface MiniSessionCardProps {
@@ -24,7 +25,7 @@ const MiniSessionCard: React.FC<MiniSessionCardProps> = ({
 }) => {
   const content = (
     <div className="bg-white shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-      <img src={image} alt={title} className="w-full h-52 object-cover" />
+      <Image src={image} alt={title} className="w-full h-52 object-cover" width={200} height={200} />
       <div className="p-4 text-left space-y-2">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm text-gray-600 line-clamp-2">{description}</p>

@@ -1,5 +1,6 @@
 'use client'
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -32,7 +33,7 @@ export default function Hero() {
                 {/* Header */}
                 <div className="flex justify-between items-start">
                     <div className="flex items-center gap-2">
-                        <img src="/SC1.png" alt="Shutter Clicks Logo" className="h-40 w-auto" />
+                        <Image src="/SC1.png" alt="Shutter Clicks Logo" className="h-40 w-auto" width={100} height={100} />
                     </div>
                     <div className="mt-[10px] text-xs uppercase tracking-widest text-right leading-tight">
                         <span className="block text-white">Payment Plans</span>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Card = {
     image: string,
     title: string,
@@ -57,11 +59,14 @@ export default function CardGrids() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                 {cards.map((card, index) => (
                     <div key={index} className="text-center">
-                        <img
-                            src={card.image}
-                            alt={card.title}
-                            className="w-full h-[300px] object-cover"
-                        />
+                        <div className="relative w-full h-[300px]">
+                            <Image
+                                src={card.image}
+                                alt={card.title}
+                                fill // Makes the image responsive
+                                className="object-cover"
+                            />
+                        </div>
                         <h3 className="mt-4 text-xs uppercase tracking-widest text-gray-500">
                             {card.title}
                         </h3>

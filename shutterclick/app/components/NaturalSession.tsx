@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function NaturalSession() {
@@ -18,10 +19,12 @@ export default function NaturalSession() {
             </div>
 
             <div className="w-full md:w-[40%] max-w-md">
-                <img
+                <Image
                     src="https://images.unsplash.com/photo-1544952843-321277baf609?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Portrait with flowers"
                     className=" w-full h-auto object-cover shadow-lg"
+                    width={500}
+                    height={500}
                 />
             </div>
         </section>
