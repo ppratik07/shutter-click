@@ -14,14 +14,14 @@ export default function Footer() {
       <div className="flex flex-col items-center justify-center space-y-6 md:space-y-4">
         <ul className="flex flex-wrap justify-center gap-6 text-xs md:text-xs tracking-widest uppercase">
           <li><Link href="/">Home</Link></li>
-          <li><a href="/experience">Experience</a></li>
-          <li><a href="/booking">Pricing & Availability</a></li>
-          <li><a href="/specials">Specials</a></li>
-          <li><a href="/404">View My Work</a></li>
-          <li><a href="/404">Locations & Setups<span className="mx-1">•</span></a></li>
-          <li><a href="/404">About<span className="mx-1">•</span></a></li>
-          <li><a href="/404">Reviews</a></li>
-          <li><a href="/404">Booking Policy</a></li>
+          <li><Link href="/booking">Pricing & Availability</Link></li>
+          <li><Link href="/experience">Experience</Link></li>
+          <li><Link href="/specials">Specials</Link></li>
+          <li><Link href="/404">View My Work</Link></li>
+          <li><Link href="/404">Locations & Setups<span className="mx-1">•</span></Link></li>
+          <li><Link href="/404">About<span className="mx-1">•</span></Link></li>
+          <li><Link href="/404">Reviews</Link></li>
+          <li><Link href="/404">Booking Policy</Link></li>
         </ul>
 
         <p className="text-[10px] mt-10 md:text-[10px]">&copy; 2025 Shutter Clicks</p>
