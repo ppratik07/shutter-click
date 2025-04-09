@@ -4,7 +4,7 @@ const MiniSessionGrid = () => {
     const sessions = [
         {
             slug: "easter-mini",
-            image: "/easter-mini.jpg",
+            image: "https://images.unsplash.com/photo-1604298027700-98d678b0f7a8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWFzdGVyfGVufDB8MXwwfHx8MA%3D%3D",
             title: "Easter Mini",
             description:
                 "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
@@ -14,7 +14,7 @@ const MiniSessionGrid = () => {
         },
         {
             slug: "mothers-day-mini",
-            image: "/mothers-day.jpg",
+            image: "https://plus.unsplash.com/premium_photo-1681296923673-238a39876f08?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90aGVyc3xlbnwwfDF8MHx8fDA%3D",
             title: "Mother's Day Mini",
             description:
                 "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
@@ -23,17 +23,18 @@ const MiniSessionGrid = () => {
             availability: "TBD",
         },
         {
-            image: "/spring-mini.jpg",
+            slug:"spring-mini",
+            image: "https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaW5nfGVufDB8MXwwfHx8MA%3D%3D",
             title: "Spring Mini",
             description:
                 "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
             duration: "30 minutes",
             price: "$150.00",
             availability: "TBD",
-            link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
         },
         {
-            image: "/easter-mini.jpg",
+            slug:"basic-session",
+            image: "https://images.unsplash.com/photo-1656918839048-cd1c3df3c0e9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGh0b2dyYXBoeXxlbnwwfDF8MHx8fDA%3D",
             title: "Package 1. Basic Session",
             description:
                 "This package is ideal for individual and family portraits, announcements, headshots, seasonal, couples...",
@@ -42,7 +43,8 @@ const MiniSessionGrid = () => {
             availability: "TBD",
         },
         {
-            image: "/mothers-day.jpg",
+            slug:"standard-session",
+            image: "https://images.unsplash.com/photo-1656918839048-cd1c3df3c0e9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGh0b2dyYXBoeXxlbnwwfDF8MHx8fDA%3D",
             title: "Package 2. Standard Session",
             description:
                 "This package is ideal for most sessions including larger groups (SEE BELOW) THIS PACKAGE INCLUDES...",
@@ -51,7 +53,8 @@ const MiniSessionGrid = () => {
             availability: "TBD",
         },
         {
-            image: "/spring-mini.jpg",
+            slug:"premium-session",
+            image: "https://images.unsplash.com/photo-1656918839048-cd1c3df3c0e9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGh0b2dyYXBoeXxlbnwwfDF8MHx8fDA%3D",
             title: "Package 3. Premium Session",
             description:
                 "This package is ideal for most sessions including larger groups (SEE BELOW) THIS PACKAGE INCLUDES...",
@@ -61,8 +64,9 @@ const MiniSessionGrid = () => {
             link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
         },
         {
-            image: "/easter-mini.jpg",
-            title: "Easter Mini",
+            slug:"mini-session",
+            image: "https://images.unsplash.com/photo-1473973916745-60839aebf06b?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title: "Mini Session",
             description:
                 "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
             duration: "20 minutes",
@@ -70,8 +74,9 @@ const MiniSessionGrid = () => {
             availability: "TBD",
         },
         {
-            image: "/mothers-day.jpg",
-            title: "Mother's Day Mini",
+            slug:"premium-branding",
+            image: "https://images.unsplash.com/photo-1473973916745-60839aebf06b?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title: "Mini Premium Brnading",
             description:
                 "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
             duration: "30 minutes",
@@ -79,8 +84,9 @@ const MiniSessionGrid = () => {
             availability: "TBD",
         },
         {
-            image: "/spring-mini.jpg",
-            title: "Spring Mini",
+            slug:"mini-basic-branding",
+            image: "https://images.unsplash.com/photo-1473973916745-60839aebf06b?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title: "Mini Basic Branding",
             description:
                 "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
             duration: "30 minutes",
@@ -89,8 +95,9 @@ const MiniSessionGrid = () => {
             link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
         },
         {
-            image: "/easter-mini.jpg",
-            title: "Easter Mini",
+            slug:"proposal",
+            image: "https://images.unsplash.com/photo-1473973916745-60839aebf06b?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title: "Proposal",
             description:
                 "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
             duration: "20 minutes",
@@ -98,8 +105,9 @@ const MiniSessionGrid = () => {
             availability: "TBD",
         },
         {
-            image: "/mothers-day.jpg",
-            title: "Mother's Day Mini",
+            slug:"engagement",
+            image: "https://images.unsplash.com/photo-1529519195486-16945f0fb37f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW5nYWdlbWVudHxlbnwwfDF8MHx8fDA%3D",
+            title: "Engagement",
             description:
                 "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
             duration: "30 minutes",
@@ -107,146 +115,147 @@ const MiniSessionGrid = () => {
             availability: "TBD",
         },
         {
-            image: "/spring-mini.jpg",
-            title: "Spring Mini",
+            slug:"wedding",
+            image: "https://images.unsplash.com/photo-1614929511547-974944a54c92?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZW5nYWdlbWVudHxlbnwwfDF8MHx8fDA%3D",
+            title: "Wedding",
             description:
                 "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
-            duration: "30 minutes",
-            price: "$150.00",
-            availability: "TBD",
-            link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
-        },
-        {
-            image: "/easter-mini.jpg",
-            title: "Easter Mini",
-            description:
-                "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
-            duration: "20 minutes",
-            price: "$50.00",
-            availability: "TBD",
-        },
-        {
-            image: "/mothers-day.jpg",
-            title: "Mother's Day Mini",
-            description:
-                "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
-            duration: "30 minutes",
-            price: "$75.00",
-            availability: "TBD",
-        },
-        {
-            image: "/spring-mini.jpg",
-            title: "Spring Mini",
-            description:
-                "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
-            duration: "30 minutes",
-            price: "$150.00",
-            availability: "TBD",
-            link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
-        },
-        {
-            image: "/easter-mini.jpg",
-            title: "Easter Mini",
-            description:
-                "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
-            duration: "20 minutes",
-            price: "$50.00",
-            availability: "TBD",
-        },
-        {
-            image: "/mothers-day.jpg",
-            title: "Mother's Day Mini",
-            description:
-                "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
-            duration: "30 minutes",
-            price: "$75.00",
-            availability: "TBD",
-        },
-        {
-            image: "/spring-mini.jpg",
-            title: "Spring Mini",
-            description:
-                "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
-            duration: "30 minutes",
-            price: "$150.00",
-            availability: "TBD",
-            link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
-        },
-        {
-            image: "/easter-mini.jpg",
-            title: "Easter Mini",
-            description:
-                "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
-            duration: "20 minutes",
-            price: "$50.00",
-            availability: "TBD",
-        },
-        {
-            image: "/mothers-day.jpg",
-            title: "Mother's Day Mini",
-            description:
-                "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
-            duration: "30 minutes",
-            price: "$75.00",
-            availability: "TBD",
-        },
-        {
-            image: "/spring-mini.jpg",
-            title: "Spring Mini",
-            description:
-                "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
-            duration: "30 minutes",
-            price: "$150.00",
-            availability: "TBD",
-            link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
-        },
-        {
-            image: "/easter-mini.jpg",
-            title: "Easter Mini",
-            description:
-                "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
-            duration: "20 minutes",
-            price: "$50.00",
-            availability: "TBD",
-        },
-        {
-            image: "/mothers-day.jpg",
-            title: "Mother's Day Mini",
-            description:
-                "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
-            duration: "30 minutes",
-            price: "$75.00",
-            availability: "TBD",
-        },
-        {
-            image: "/spring-mini.jpg",
-            title: "Spring Mini",
-            description:
-                "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
-            duration: "30 minutes",
-            price: "$150.00",
-            availability: "TBD",
-            link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
-        },
-        {
-            image: "/mothers-day.jpg",
-            title: "Newborn Session",
-            description:
-                "THIS PACKAGE INCLUDES 90 min session Digital delivery of 15 high-resolution, print-ready..",
-            duration: "30 minutes",
-            price: "$75.00",
-            availability: "TBD",
-        },
-        {
-            image: "/spring-mini.jpg",
-            title: "Luxurious Picnic and Mini Photo...",
-            description:
-                "Book a beautiful luxurious 2hr picnic for TWO with Hermosa Picnics and capture the moment in time with a complimentary add-on ....",
             duration: "30 minutes",
             price: "$150.00",
             availability: "TBD",
             link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
         }
+        // {
+        //     image: "/easter-mini.jpg",
+        //     title: "Easter Mini",
+        //     description:
+        //         "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
+        //     duration: "20 minutes",
+        //     price: "$50.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/mothers-day.jpg",
+        //     title: "Mother's Day Mini",
+        //     description:
+        //         "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
+        //     duration: "30 minutes",
+        //     price: "$75.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/spring-mini.jpg",
+        //     title: "Spring Mini",
+        //     description:
+        //         "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
+        //     duration: "30 minutes",
+        //     price: "$150.00",
+        //     availability: "TBD",
+        //     link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
+        // },
+        // {
+        //     image: "/easter-mini.jpg",
+        //     title: "Easter Mini",
+        //     description:
+        //         "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
+        //     duration: "20 minutes",
+        //     price: "$50.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/mothers-day.jpg",
+        //     title: "Mother's Day Mini",
+        //     description:
+        //         "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
+        //     duration: "30 minutes",
+        //     price: "$75.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/spring-mini.jpg",
+        //     title: "Spring Mini",
+        //     description:
+        //         "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
+        //     duration: "30 minutes",
+        //     price: "$150.00",
+        //     availability: "TBD",
+        //     link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
+        // },
+        // {
+        //     image: "/easter-mini.jpg",
+        //     title: "Easter Mini",
+        //     description:
+        //         "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
+        //     duration: "20 minutes",
+        //     price: "$50.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/mothers-day.jpg",
+        //     title: "Mother's Day Mini",
+        //     description:
+        //         "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
+        //     duration: "30 minutes",
+        //     price: "$75.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/spring-mini.jpg",
+        //     title: "Spring Mini",
+        //     description:
+        //         "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
+        //     duration: "30 minutes",
+        //     price: "$150.00",
+        //     availability: "TBD",
+        //     link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
+        // },
+        // {
+        //     image: "/easter-mini.jpg",
+        //     title: "Easter Mini",
+        //     description:
+        //         "NOW - APRIL 18TH Spring is in the air, and it's the perfect time for Mini Easter Photo Sessions! ✨🐣...",
+        //     duration: "20 minutes",
+        //     price: "$50.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/mothers-day.jpg",
+        //     title: "Mother's Day Mini",
+        //     description:
+        //         "NOW - MAY 9TH 🌸✨ Mother's Day Mini Sessions are here! Celebrate the love and beauty of...",
+        //     duration: "30 minutes",
+        //     price: "$75.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/spring-mini.jpg",
+        //     title: "Spring Mini",
+        //     description:
+        //         "NOW - JUNE 20TH Capture the season’s beauty with fresh, vibrant photos perfect for your family....",
+        //     duration: "30 minutes",
+        //     price: "$150.00",
+        //     availability: "TBD",
+        //     link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
+        // },
+        // {
+        //     image: "/mothers-day.jpg",
+        //     title: "Newborn Session",
+        //     description:
+        //         "THIS PACKAGE INCLUDES 90 min session Digital delivery of 15 high-resolution, print-ready..",
+        //     duration: "30 minutes",
+        //     price: "$75.00",
+        //     availability: "TBD",
+        // },
+        // {
+        //     image: "/spring-mini.jpg",
+        //     title: "Luxurious Picnic and Mini Photo...",
+        //     description:
+        //         "Book a beautiful luxurious 2hr picnic for TWO with Hermosa Picnics and capture the moment in time with a complimentary add-on ....",
+        //     duration: "30 minutes",
+        //     price: "$150.00",
+        //     availability: "TBD",
+        //     link: "https://shalamarjonesphotography.pixieset.com/booking/spring-minis",
+        // }
     ];
 
     return (

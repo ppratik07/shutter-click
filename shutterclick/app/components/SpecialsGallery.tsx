@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const sessions = [
   {
     title: "SPRING MINI SESSIONS",
@@ -49,9 +51,8 @@ export default function SpecialsGallery() {
       {sessions.map((session, index) => (
         <div
           key={session.title}
-          className={`flex flex-col md:flex-row items-center justify-center gap-10 ${
-            index % 2 === 1 ? "md:flex-row-reverse" : ""
-          }`}
+          className={`flex flex-col md:flex-row items-center justify-center gap-10 ${index % 2 === 1 ? "md:flex-row-reverse" : ""
+            }`}
         >
           {/* Image */}
           <div className="w-full md:w-1/2">
@@ -77,9 +78,11 @@ export default function SpecialsGallery() {
                 ))}
               </ul>
             </div>
-            <button className="mt-4 bg-[#8b6b65] hover:bg-[#7a5953] text-white px-6 py-2 rounded-md tracking-wide">
-              BOOK NOW
-            </button>
+            <Link href="/booking">
+              <button className="mt-4 bg-[#8b6b65] cursor-pointer hover:bg-[#7a5953] text-white px-6 py-2 rounded-md tracking-wide">
+                BOOK NOW
+              </button>
+            </Link>
           </div>
         </div>
       ))}

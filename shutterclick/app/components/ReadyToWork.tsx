@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Link from "next/link";
 
 interface ReadyToWorkProps {
   title1: string;
@@ -50,9 +51,11 @@ export default function ReadyToWork({ title1, title2, imageUrl }: ReadyToWorkPro
           {title2}
         </p>
         <div className="flex justify-center">
-          <button className="bg-[#a7857d] hover:bg-[#957469] transition text-white text-xs tracking-widest uppercase px-6 py-3 rounded-full shadow-md">
+          <Link href="/booking">
+          <button className="bg-[#a7857d] cursor-pointer hover:bg-[#957469] transition text-white text-xs tracking-widest uppercase px-6 py-3 rounded-full shadow-md">
             Contact Me
           </button>
+          </Link>      
         </div>
       </motion.div>
     </section>

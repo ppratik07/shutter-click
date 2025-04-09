@@ -22,9 +22,9 @@ import {
 
         <div>
           <img
-            src="/logo.png" 
+            src="/SC1.png" 
             alt="Logo"
-            className="mx-auto h-20"
+            className="h-40 w-auto text-center mx-auto"
           />
         </div>
   

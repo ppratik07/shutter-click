@@ -1,5 +1,7 @@
 'use client'
 
+
+import { useRouter } from 'next/navigation';
 import CenteredTextBanner from './CenteredTextBanner'
 
 interface ClientCenteredBannerProps {
@@ -9,8 +11,9 @@ interface ClientCenteredBannerProps {
 }
 
 export default function ClientCenteredBanner(props: ClientCenteredBannerProps) {
+    const router = useRouter();
     const handleClick = () => {
-        console.log('Banner clicked!');
+        router.push('/specials');
     };
 
     return <CenteredTextBanner {...props} onClick={handleClick} />

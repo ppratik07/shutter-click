@@ -1,5 +1,6 @@
 'use client'
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const images: string[] = [
@@ -30,7 +31,9 @@ export default function Hero() {
             <div className="relative z-10 p-6 flex flex-col h-full justify-between">
                 {/* Header */}
                 <div className="flex justify-between items-start">
-                    <div className="text-xs uppercase tracking-widest text-white">shutter clicks</div>
+                    <div className="flex items-center gap-2">
+                        <img src="/SC1.png" alt="Shutter Clicks Logo" className="h-40 w-auto" />
+                    </div>
                     <div className="mt-[10px] text-xs uppercase tracking-widest text-right leading-tight">
                         <span className="block text-white">Payment Plans</span>
                         <span className="block text-white">Available</span>
@@ -43,11 +46,13 @@ export default function Hero() {
                         Portrait & Event Photographer
                     </h1>
                     <div className="fixed bottom-12 left-6">
-                        <Button className="px-6 py-6 rounded-xl hover:opacity-90 transition bg-[#a7857d]">
-                            <div className="text-xs uppercase tracking-widest ">
-                                Book a Session
-                            </div>
-                        </Button>
+                        <Link href="/booking">
+                            <Button className="px-6 py-6 rounded-xl hover:opacity-90 transition bg-[#a7857d]">
+                                <div className="text-xs uppercase tracking-widest ">
+                                    Book a Session
+                                </div>
+                            </Button>
+                        </Link>
                     </div>
                 </div>
 

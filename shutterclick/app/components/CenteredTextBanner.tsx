@@ -19,7 +19,7 @@ export default function CenteredBanner({
             {buttonText && (
                 <a
                     onClick={onClick}
-                    className="mt-6 inline-flex items-center underline text-white px-6 py-2 tracking-widest uppercase text-xl md:text-xl hover:opacity-90 transition-all"
+                    className="mt-6 inline-flex items-center underline text-white px-6 py-2 tracking-widest cursor-pointer uppercase text-xl md:text-xl hover:opacity-90 transition-all"
                 >
                     <span className="mr-3">→</span>
                     {buttonText}
