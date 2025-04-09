@@ -8,7 +8,7 @@ export default function Footer() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="bg-[#8a6b6b] text-white px-6 py-10 mt-10"
+      className="bg-[#8a6b6b] text-white px-6 py-10"
     >
       <div className="flex flex-col items-center justify-center space-y-6 md:space-y-4">
         <ul className="flex flex-wrap justify-center gap-6 text-xs md:text-xs tracking-widest uppercase">
