@@ -3,6 +3,7 @@ import MiniSessionCard from "./MiniSessionCard";
 const MiniSessionGrid = () => {
     const sessions = [
         {
+            slug: "easter-mini",
             image: "/easter-mini.jpg",
             title: "Easter Mini",
             description:
@@ -12,6 +13,7 @@ const MiniSessionGrid = () => {
             availability: "TBD",
         },
         {
+            slug: "mothers-day-mini",
             image: "/mothers-day.jpg",
             title: "Mother's Day Mini",
             description:

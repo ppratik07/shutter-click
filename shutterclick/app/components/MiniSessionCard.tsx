@@ -1,4 +1,5 @@
 import { Clock, DollarSign, CalendarDays } from "lucide-react";
+import Link from "next/link";
 
 interface MiniSessionCardProps {
   image: string;
@@ -8,6 +9,7 @@ interface MiniSessionCardProps {
   price: string;
   availability: string;
   link?: string;
+  slug?: string;
 }
 
 const MiniSessionCard: React.FC<MiniSessionCardProps> = ({
@@ -18,6 +20,7 @@ const MiniSessionCard: React.FC<MiniSessionCardProps> = ({
   price,
   availability,
   link,
+  slug
 }) => {
   const content = (
     <div className="bg-white shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
@@ -47,6 +50,10 @@ const MiniSessionCard: React.FC<MiniSessionCardProps> = ({
     <a href={link} target="_blank" rel="noopener noreferrer">
       {content}
     </a>
+  ) : slug ? (
+    <Link href={`/booking/${slug}`}>
+      {content}
+    </Link>
   ) : (
     content
   );
