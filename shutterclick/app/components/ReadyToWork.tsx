@@ -46,7 +46,7 @@ export default function ReadyToWork({ title1, title2, imageUrl }: ReadyToWorkPro
         <h2 className="text-2xl md:text-4xl font-light tracking-widest uppercase mb-4">
           {title1}
         </h2>
-        <p className="text-sm md:text-base mb-8">
+        <p className="text-xs md:text-xs mb-8">
           {title2}
         </p>
         <div className="flex justify-center">
